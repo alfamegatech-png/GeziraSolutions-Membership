@@ -1,0 +1,75 @@
+.headStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.headStyle1 {
+  font-size: xx-large;
+  font-weight: bolder;
+  text-align: center;
+  color: var(--primary-color);
+  margin-top: 10px;
+}
+.labelStyle {
+  margin-left: 10px;
+}
+
+.inputStyle {
+  border-radius: 50px;
+  border-width: 1px;
+  align-items: center;
+  text-align: center;
+  margin-left: 10px;
+}
+.error {
+  text-align: center;
+  color: red;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  text-align: end;
+  margin-top: 20px;
+  text-decoration: solid;
+  align-items: start;
+/* background-color: aqua; */
+}
+.paragraph {
+  text-align: center;
+  margin-left: 150px;
+  text-align: start;
+  
+  max-height: 50px;
+
+}
+.para {
+  text-align: start;
+  margin-right: 150px;
+  /* background-color: aqua; */
+}
+.headName {
+  text-align: start;
+  margin-top: 10px;
+  font-weight: bolder;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+  background-color: #f5f5f5;
+}

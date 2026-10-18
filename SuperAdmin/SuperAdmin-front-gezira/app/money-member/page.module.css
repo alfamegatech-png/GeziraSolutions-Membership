@@ -1,0 +1,114 @@
+.tableStyle {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tableStyle th,
+  .tableStyle td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .tableStyle th {
+    background-color: #f2f2f2;
+  }
+  .labelStyle{
+    margin-left: 10px;
+    
+  }
+
+.inputStyle{
+    border-radius: 50px;
+    border-width: 1px;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    background-color: rgb(245, 245, 245);
+
+}
+.headStyle{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 5px;
+    font-size:xx-large;
+    
+    
+}
+.datePage{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin-right: 25px;
+    
+}
+.lapelTitle{
+    font-size: x-large;
+    
+
+    
+}
+
+.checkBoxContainer {
+    display: flex;
+    background-color: red;
+    position: relative;
+    margin-bottom: 150px;
+    
+  }
+  .checkBoxColumn1{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+    position: absolute;
+    left: 280px;
+
+  }
+  .checkBoxColumn2{
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+    position: absolute;
+    right: 330px;
+    width: 15%;
+    
+  }
+  .checkBox{
+    border-radius: 10px;
+    border-width: 1px;
+    margin: 2px 0 5px 0;
+    width: 100%;
+    padding-left: 30px;
+    text-align: start;
+    background-color: rgb(245, 245, 245);
+  }
+  .checkBox input {
+    margin-left: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    
+  }
+.buttonStyle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    
+}
+.codeStyle {
+    display: flex;
+    flex-direction: column; 
+}
+
+.pagination{
+    display: flex;
+    justify-content: space-between;
+    margin:10px 50px 0 50px;
+    justify-content: space-around;
+    }
+    .spanStyle{
+    font-size: large;
+    }
+  

@@ -1,0 +1,71 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.headStyle {
+  font-size: xx-large;
+  font-weight: bolder;
+  text-align: center;
+  color: var(--primary-color);
+  margin-top: 10px;
+}
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  /* font-size: 16px;  */
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  text-align: end;
+  margin-top: 20px;
+  text-decoration: solid;
+  align-items: start;
+}
+.parentDiv {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.lapelTitle {
+  font-size: x-large;
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.inputStyle {
+  background-color: #f2f6f8;
+  width: 200px;
+  border-radius: 500px !important;
+  box-sizing: border-box;
+  border-color: black;
+  text-align: center;
+  border-radius: 2px;
+  color: rgb(0, 0, 0);
+  margin-left: 10px;
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 50px 0 50px;
+  justify-content: space-around;
+}
+.spanStyle {
+  font-size: large;
+}
+.titlePrint {
+  /* font-weight: bolder; */
+  text-align: center;
+  color: var(--primary-color);
+  margin-top: 10px;
+  /* font-size: xx-large; */
+}

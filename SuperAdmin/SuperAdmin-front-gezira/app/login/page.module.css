@@ -1,0 +1,16 @@
+.formBg {
+    min-height: 75vh !important;
+}
+
+.formCrd {
+    width: 25rem;
+    border: 2px solid var(--sub-color);
+    box-shadow: 4px 4px 20px var(--sub-color);
+    border-radius: 1.1rem;
+}
+
+.crdHead {
+    background-color: var(--primary-color);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}

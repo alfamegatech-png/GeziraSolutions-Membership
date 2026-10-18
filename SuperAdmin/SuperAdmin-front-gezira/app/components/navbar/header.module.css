@@ -1,0 +1,135 @@
+/* .headerBg {
+    background-color:rgb(221, 238, 245);
+    border-bottom: 2px solid var(--sub-color);
+}
+.pageContainer{
+    font-size: x-large;
+    color: aliceblue !important;
+}
+
+#basic-nav-dropdown.nav-item .nav-link {
+    color: aliceblue;
+} */
+/* General background color and border styles for the header */
+/* header.module.css */
+
+/* Navbar background color */
+.headerBg {
+    background-color: #365d3e; 
+    display: flex !important;
+    align-items: center !important;/* You can change this color as needed */
+  }
+  
+  /* Navbar links */
+  .nav-link {
+    color: white !important; /* Link text color */
+    margin: 0 10px; /* Spacing between links */
+    font-size: 18px;
+    display: flex !important; /* Font size of links */
+  }
+  
+  /* Navbar brand */
+  .navbar-brand {
+    font-size: 24px; /* Font size of brand */
+    font-weight: bold; /* Bold font for brand */
+  }
+  
+  /* Dropdown item style */
+  .dropdown-item {
+    color: black !important; /* Dropdown item text color */
+  }
+  
+  /* Active link style */
+  .nav-link.active {
+    font-weight: bold; /* Bold font for active link */
+  }
+  
+  /* Dropdown menu background color */
+  .dropdown-menu {
+    background-color: #fff; /* Dropdown menu background color */
+  }
+  
+  /* Dropdown menu item hover style */
+  .dropdown-item:hover {
+    background-color: #f8f9fa; /* Background color on hover */
+  }
+  /* header.module.css */
+
+/* Navbar container */
+/* header.module.css */
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Navbar links */
+  .nav-link {
+    margin: 0 10px; /* Spacing between links */
+  }
+  
+  /* Dropdown menu */
+  .dropdown-menu {
+    top: 100%;
+    left: 0;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    animation: fadeIn 0.3s ease; /* Animation for smooth appearance */
+  }
+  
+  /* Show dropdown menu on hover */
+  .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Dropdown menu item hover effect */
+  .dropdown-item:hover {
+    background-color: #f8f9fa; /* Background color on hover */
+  }
+  
+  /* Custom animation for dropdown appearance */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* header.module.css */
+
+/* Apply Almarai font to navbar */
+.navbar,
+.navbar-brand,
+.nav-link,
+.dropdown-item {
+  font-family: 'Almarai', sans-serif;
+}
+
+#basic-nav-dropdown .nav-link{
+display: inline-block;
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--bs-navbar-nav-link-padding-x);
+    }
+  
+
+}

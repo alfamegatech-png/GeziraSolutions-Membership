@@ -1,0 +1,122 @@
+.page {
+  padding: 16px 24px 32px;
+}
+
+.title {
+  text-align: center;
+  margin: 8px 0 24px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 14px;
+  align-items: end;
+  margin-bottom: 16px;
+}
+
+.filterItem,
+.checkItem {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.checkItem {
+  flex-direction: row;
+  align-items: center;
+  min-height: 38px;
+}
+
+.filterItem input,
+.filterItem select {
+  width: 100%;
+  min-height: 38px;
+  border: 1px solid #cfd6df;
+  border-radius: 6px;
+  padding: 6px 10px;
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.safeTotals {
+  margin: 18px 0;
+}
+
+.safeTotals h2 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.totalsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.totalItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid #d7dde5;
+  border-radius: 6px;
+  padding: 8px 10px;
+  background-color: #f8fafc;
+}
+
+.tableWrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  min-width: 1100px;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border: 1px solid #d7dde5;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.table th {
+  background-color: #f1f5f9;
+  font-weight: 700;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 700;
+}

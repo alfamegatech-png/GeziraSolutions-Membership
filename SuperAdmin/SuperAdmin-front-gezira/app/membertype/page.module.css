@@ -1,0 +1,31 @@
+.table {
+    font-family: arial, sans-serif;
+    margin-top:2%;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .t {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  .table th{
+    background-color: #f2f2f2;
+  }
+  .parenttable{
+    width: 60%;
+    margin-Right:auto;
+    margin-left:auto;
+  }
+  .form{
+    margin-Right:auto;
+    margin-left:auto;
+    margin-top:2%;
+    margin-bottom:2%;
+   
+  }
+  .name {
+    padding: 8px;
+    border: 1px solid #ddd;
+    
+  }

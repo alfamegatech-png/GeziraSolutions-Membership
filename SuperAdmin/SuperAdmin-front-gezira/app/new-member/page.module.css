@@ -1,0 +1,69 @@
+.tableStyle {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .tableStyle th,
+  .tableStyle td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .tableStyle th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .tableStyle tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  
+  .tableStyle tbody tr:hover {
+    background-color: #ddd;
+    text-align: center;
+  }
+  .headStyle {
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--primary-color);
+    margin-top: 10px;
+  }
+  .datePage {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+  }
+  .lapelTitle {
+    font-size: x-large;
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px; 
+  
+  }
+  .inputStyle {
+    background-color:#f2f6f8;
+    width: 200px;
+    border-radius: 500px !important;
+    box-sizing: border-box;
+    border-color: black;
+    text-align: center;
+    border-radius: 2px;
+    color: rgb(0, 0, 0);
+  }
+  .pagination{
+    display: flex;
+    justify-content: space-between;
+    margin:10px 50px 0 50px;
+    justify-content: space-around;
+    }
+    .spanStyle{
+    font-size: large;
+    }

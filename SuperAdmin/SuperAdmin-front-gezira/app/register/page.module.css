@@ -1,0 +1,80 @@
+.pageStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+.formStyle {
+    position: absolute;
+    width: 500px;
+    padding: 20px;
+    background-color: #cfcccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 80px;
+}
+
+.formStyle label {
+    font-size: 16px;
+    color: #242323;
+}
+
+.formStyle input,
+.formStyle select {
+    width: 100%;
+    margin-top: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.formStyle select {
+    appearance: none;
+    /* removes default dropdown arrow */
+    padding-right: 30px;
+    /* adds space for custom arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23333%3333"><path d="M7 10l5 5 5-5H7z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    /* custom arrow */
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    background-size: 20px;
+}
+
+.formStyle input[type="submit"] {
+    background-color: #007bff;
+    /* blue */
+    color: #fff;
+    /* white */
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    margin-top: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formStyle input[type="submit"]:hover {
+    background-color: #0056b3;
+    /* darker blue on hover */
+}
+.registerButton {
+    background-color: #18804f;
+    /* green */
+    color: #fff;
+    /* white */
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    margin-top: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.registerButton:hover {
+    background-color: #004605;
+    /* darker green on hover */
+}
