@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  font-size: small;
+  font-family: "none";
+}
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+@page {
+  size: A4 portrait !important;
+  margin: 0 !important;
+}
+@media print {
+  .page {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: calc(29.7cm - 1.4cm); */
+    max-height: calc(29.7cm - 1.4cm) !important;
+  }
+
+  .receipt {
+    /* border: 1px solid #dddddd; */
+
+    box-sizing: border-box;
+
+    margin-bottom: 2.5cm;
+  }
+}

@@ -1,0 +1,6 @@
+.footer {
+  text-align: center;
+  background-image: var(--mainGradient);
+  color: var(--mainColor);
+  position: relative;
+}

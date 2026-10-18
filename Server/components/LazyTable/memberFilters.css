@@ -1,0 +1,49 @@
+@media screen {
+  .membership-ui .member-search-filters {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: end;
+    gap: 14px;
+    padding: 20px;
+    border-bottom: 1px solid #dce4df;
+    background: #fff;
+  }
+  .membership-ui .member-top-filter { min-width: 0; }
+  .membership-ui .member-top-filter label { display: block; margin-bottom: 6px; }
+  .membership-ui .member-top-filter .p-dropdown {
+    width: 100%; display: flex; align-items: center;
+    height: 44px; min-height: 44px; padding: 0;
+  }
+  .membership-ui .member-top-filter .p-dropdown-label { min-width: 0; }
+  .membership-ui .member-top-filter .p-dropdown-clearable .p-dropdown-label { padding-inline-start: 42px; }
+  .membership-ui .member-top-filter .p-dropdown-clear-icon { right: 12px; left: auto; }
+  .membership-ui .member-top-filter > input.p-inputtext { height: 44px; min-height: 44px; }
+  .membership-ui .member-top-filter-actions { display: flex; gap: 10px; flex-wrap: wrap; grid-column: 1 / -1; }
+  @media (max-width: 900px) {
+    .membership-ui .member-search-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 520px) {
+    .membership-ui .member-search-filters { grid-template-columns: minmax(0, 1fr); padding: 16px; }
+  }
+  .membership-ui .member-list-table .member-date-filter {
+    display: inline-flex;
+    width: 184px;
+    min-width: 184px;
+  }
+  .membership-ui .member-list-table .member-date-filter input {
+    flex: 1;
+    min-width: 0;
+    width: 0;
+    direction: ltr;
+    text-align: center;
+  }
+  .membership-ui .member-list-table .member-date-filter input[aria-invalid="true"] { border-color: #c03535; }
+  .membership-ui .member-list-table .p-column-filter-row .p-inputnumber {
+    width: 104px;
+    min-width: 104px;
+  }
+  .membership-ui .member-list-table .p-column-filter-element > input.p-inputtext {
+    width: 180px;
+    min-width: 180px;
+  }
+}

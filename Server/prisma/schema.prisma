@@ -1,0 +1,404 @@
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["multiSchema"] 
+}
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  schemas = ["public", "clubtheclub"] 
+}
+
+model Transactions {
+  Id                       Int                       @id @default(autoincrement())
+  SafeNumber               String                    @default("")
+  CreateBy                 Int?
+  CreateAt                 DateTime?
+  CancelBy                 Int?
+  CancelAt                 DateTime?
+  Canceled                 Boolean                   @default(false)
+  ReceiptNumber            Int
+  CreateByMembershipUser   String?
+  CancelByMembershipUser   String?
+  Transaction_AccountNumbers Transaction_AccountNumbers[] // Updated to PascalCase
+
+  @@schema("clubtheclub") // Associate with the `clubtheclub` schema
+}
+
+model Transaction_AccountNumbers {
+  AccountNumberId          Int
+  TransactionId            Int
+  Money                    Float
+  AccountNumber            AccountNumbers            @relation(fields: [AccountNumberId], references: [Id])
+  Transaction              Transactions              @relation(fields: [TransactionId], references: [Id])
+
+  @@id([AccountNumberId, TransactionId]) // Composite key
+  @@schema("clubtheclub") // Associate with the `clubtheclub` schema
+}
+
+model AccountNumbers {
+  Id                       Int                       @id @default(autoincrement())
+  Name                     String                    @default("")
+  TransactionAccountNumbers Transaction_AccountNumbers[] // Updated to PascalCase
+
+  @@schema("clubtheclub") // Associate with the `clubtheclub` schema
+}
+
+model BookingLockers {
+  Id                     Int       @id @default(autoincrement())
+  Name                   String?
+  LockerId               Int
+  LockerPriceId          Int?      @default(0)
+  Price                  Float
+  Status                 Boolean
+  StartDateOfBooking     DateTime
+  EndDateOfBooking       DateTime
+  MemberCode             Int       @default(0)
+  PhoneNumber            String?   @db.VarChar(11)
+  MemberRefName          String?
+  MemberType             String?
+  PaymentDate            DateTime?
+  ReceiptNumber          Int       @default(autoincrement()) @map("ReceiptNumber")
+  PriceWithoutTax        Float     @default(0.0)
+  Tax                    Float     @default(0.0)
+  SafeNumber             String?
+  PaymentCancelationTime DateTime?
+  PaymentCanceled        Boolean   @default(false)
+  CancellationReason     String?
+  Receipt                Bytes?
+  ReceiptExtension       String?
+  ReceiptLength          BigInt?
+  ReturnedKey            Boolean   @default(false)
+  ViolationMoney         Float?
+  ViolationPaymentDate   DateTime?
+  ViolationYears         Int?
+  ViolationReceipt       Bytes?
+  ViolationReceiptExtension String?
+  ViolationReceiptLength BigInt?
+  KeyReturnedDate        DateTime?
+  CancelAt               DateTime?
+  CreateAt               DateTime?
+  UpdateAt               DateTime?
+  CreateBy               Int?
+  UpdateBy               Int?
+  CancelBy               Int?
+  UserId                 Int?
+  bookingLockersLinks  MembershipBookingLocker[]
+
+  @@schema("clubtheclub")
+}
+
+model members {
+  id                 String                 @id @default(dbgenerated("gen_random_uuid()"))
+  member_code        Int                    @unique
+  name               String?
+  national_id        String?
+  image_name         String?
+  birth_date         DateTime?              @db.Date
+  address            String?
+  job                Int?
+  job_address        String?
+  job_tel            String?
+  marital_status     Int?
+  nationality        Int?
+  religion           Int?
+  sex                Int?
+  tel                String?
+  remark             String?
+  member_type        Int?
+  section            Int?
+  city               Int?
+  area               Int?
+  qual               Int?
+  trans              Int?
+  id_1               Int?
+  birth_place        String?
+  user_id            String?
+  suspended_date      DateTime?             @db.Date
+
+  join_date          DateTime?              @db.Date
+  suspended          String?                @default("-")
+  rel_area           lookup_area?           @relation(fields: [area], references: [code])
+  rel_city           lookup_city?           @relation(fields: [city], references: [code])
+  rel_job            lookup_job?            @relation(fields: [job], references: [code])
+  rel_marital_status lookup_marital_status? @relation(fields: [marital_status], references: [code])
+  rel_member_type    lookup_member_type?    @relation(fields: [member_type], references: [code])
+  rel_nationality    lookup_nationality?    @relation(fields: [nationality], references: [code])
+  rel_qual           lookup_qual?           @relation(fields: [qual], references: [code])
+  rel_religion       lookup_religion?       @relation(fields: [religion], references: [code])
+  rel_section        lookup_section?        @relation(fields: [section], references: [code])
+  rel_sex            lookup_sex?            @relation(fields: [sex], references: [code])
+  rel_trans          lookup_trans?          @relation(fields: [trans], references: [code])
+  rel_user           users?                 @relation(fields: [user_id], references: [id])
+  rel_members        members_ref[] 
+  membership         memberships[]
+  member_attachments member_attachments[]
+
+  @@schema("public") // Associate with the public schema
+}
+
+model members_ref {
+  id              String              @id @default(dbgenerated("gen_random_uuid()"))
+  birth_date      DateTime?           @db.Date
+  member_type     Int?
+  member_code     Int?
+  name            String?
+  ref             Int?
+  serial_no       Int?
+  sex             Int?
+  image_name      String?
+  username        String?
+  join_date       DateTime?           @db.Date
+  user_id         String?
+  deleted         Int                 @default(0)
+  remark          String?
+  suspended_date  DateTime?             @db.Date
+  suspended       String?             @default("-")
+  member          members?            @relation(fields: [member_code], references: [member_code])
+  rel_member_type lookup_member_type? @relation(fields: [member_type], references: [code])
+  rel_ref         lookup_ref?         @relation(fields: [ref], references: [code])
+  rel_sex         lookup_sex?         @relation(fields: [sex], references: [code])
+  rel_user        users?              @relation(fields: [user_id], references: [id])
+
+  @@schema("public") // Associate with the public schema
+}
+model MembershipBookingLocker {
+  id               Int           @id @default(autoincrement())
+
+  membershipId     String
+  bookingLockerId  Int
+
+  membership       memberships    @relation(fields: [membershipId], references: [id])
+  bookingLocker    BookingLockers @relation(fields: [bookingLockerId], references: [Id])
+
+  @@map("MembershipBookingLocker")
+  @@schema("public")
+
+  @@unique([membershipId, bookingLockerId])
+}
+
+model memberships {
+  id                  String          @id @default(dbgenerated("gen_random_uuid()"))
+  start_date          DateTime?       @db.Date
+  end_date            DateTime?       @db.Date
+  status              Int?            @default(1)
+  remark              String?
+  member_code         Int?
+  member_order_date   DateTime?       @default(now()) @db.Date
+  member_order_time   DateTime?       @default(now()) @db.Timestamp(6)
+  delay_penalty       Float? @default(0)
+  previous_penalties  Float? @default(0)
+  maintenance_fee     Float? @default(0)
+  membership_card_fee Float? @default(0)
+  fellowship_fund_fee Float? @default(0)
+  transfer_separation_fee Float? @default(0)
+  renew_fee           Float? @default(0)
+  renew_years         Int? @default(0)
+  total_amount        Float? @default(0)
+  value_added_tax     Float? @default(0)
+  is_synced           Int             @default(0)
+  safe_no             Int?
+  serial_no           Int?            @default(autoincrement())
+  user_id             String?
+  swimming            Float? @default(0)
+  first_time_fee      Float? @default(0)
+  join_fee            Float? @default(0)
+  form_no             Int?
+  installment         Float? @default(0)
+  canceled            Int             @default(0)
+  secondary           Int             @default(0)
+  new_ref_fees        Float?        @default(0)
+  seperate_fees       Float? @default(0)
+  prev_years_fee      Float? @default(0)
+
+  ref_member_id       String?
+  related_membership  String?
+  rel_canceled        lookup_canceled @relation(fields: [canceled], references: [code])
+  member              members?        @relation(fields: [member_code], references: [member_code])
+  rel_status          lookup_status?  @relation(fields: [status], references: [id])
+  rel_secondary       lookup_secondary? @relation(fields: [secondary], references: [code])
+  rel_user            users?          @relation(fields: [user_id], references: [id])
+  bookingLockersLinks MembershipBookingLocker[]
+
+  @@schema("public") // Associate with the public schema
+}
+
+model member_attachments {
+  id              String @id @default(dbgenerated("gen_random_uuid()"))
+  memberId        String
+  file_name       String
+  file_extension  String
+  file_length     Int
+  attachment_byte Bytes?
+  member    members     @relation(fields: [memberId], references: [id])
+
+  @@schema("public") // Associate with the public schema
+}
+
+model users {
+  id          String        @id @default(dbgenerated("gen_random_uuid()"))
+  name        String        @unique
+  email       String?       @unique
+  password    String
+  fullname    String?
+  national_id String?
+  safe_no     Int?
+
+  members     members[]
+  members_ref members_ref[]
+  memberships memberships[]
+
+  @@schema("public") // Associate with the public schema
+}
+
+model history {
+  id            Int      @id @default(autoincrement())
+  user_id       String
+  action        String
+  member_id     String
+  changed_fields String[] 
+  last_values   Json[]     // Assuming you want to store the last values as JSON
+  time          DateTime @default(now())
+
+  @@schema("public") // Associate with the public schema
+}
+
+model lookup_area {
+  id      Int       @id @default(autoincrement())
+  code    Int       @unique
+  name    String
+  members members[]
+
+  @@schema("public") // Associate with the public schema
+}
+
+model lookup_canceled {
+  id         Int           @id @default(autoincrement())
+  code       Int           @unique
+  name       String
+  membership memberships[]
+
+  @@schema("public") // Associate with the public schema
+}
+
+model lookup_city {
+  id      Int       @id @default(autoincrement())
+  code    Int       @unique
+  name    String
+  members members[]
+
+  @@schema("public") // Associate with the public schema
+}
+
+model lookup_job {
+  id      Int       @id @default(autoincrement())
+  code    Int       @unique
+  name    String
+  members members[]
+
+  @@schema("public") // Associate with the public schema
+}
+
+model lookup_member_type {
+  id          Int           @id @default(autoincrement())
+  code        Int           @unique
+  name        String
+  price       Int?
+  member      members[]
+  members_ref members_ref[]
+
+  @@schema("public") // Associate with the public schema
+}
+
+model lookup_qual {
+  id      Int       @id @default(autoincrement())
+  code    Int       @unique
+  name    String
+  members members[]
+
+  @@schema("public") // Associate with the public schema
+}
+
+model lookup_ref {
+  id          Int           @id @default(autoincrement())
+  code        Int           @unique
+  name        String
+  member_type String
+  price       Int
+  members_ref members_ref[]
+
+  @@schema("public") // Associate with the public schema
+}
+
+model lookup_section {
+  id      Int       @id @default(autoincrement())
+  code    Int       @unique
+  name    String
+  members members[]
+
+  @@schema("public") // Associate with the public schema
+}
+
+model lookup_status {
+  id         Int           @id @default(autoincrement())
+  code       Int           @unique
+  name       String
+  tag        String
+  membership memberships[]
+
+  @@schema("public") // Associate with the public schema
+}
+
+model lookup_secondary {
+  id         Int           @id @default(autoincrement())
+  code       Int           @unique
+  name       String
+  membership memberships[]
+
+  @@schema("public") // Associate with the public schema
+}
+
+model lookup_trans {
+  id      Int       @id @default(autoincrement())
+  code    Int       @unique
+  name    String
+  members members[]
+
+  @@schema("public") // Associate with the public schema
+}
+
+model lookup_sex {
+  id          Int           @id @default(autoincrement())
+  code        Int           @unique
+  name        String
+  members     members[]
+  members_ref members_ref[]
+
+  @@schema("public") // Associate with the public schema
+}
+
+model lookup_nationality {
+  id      Int       @id @default(autoincrement())
+  code    Int       @unique
+  name    String
+  members members[]
+
+  @@schema("public") // Associate with the public schema
+}
+
+model lookup_marital_status {
+  id      Int       @id @default(autoincrement())
+  code    Int       @unique
+  name    String
+  members members[]
+
+  @@schema("public") // Associate with the public schema
+}
+
+model lookup_religion {
+  id      Int       @id @default(autoincrement())
+  code    Int       @unique
+  name    String
+  members members[]
+
+  @@schema("public") // Associate with the public schema
+}

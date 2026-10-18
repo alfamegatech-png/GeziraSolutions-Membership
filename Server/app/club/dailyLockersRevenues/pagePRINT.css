@@ -1,0 +1,6 @@
+@media print {
+  td,
+  th {
+    padding: 4px 0 !important;
+  }
+}

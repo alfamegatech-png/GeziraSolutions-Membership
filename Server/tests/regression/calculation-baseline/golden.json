@@ -1,0 +1,2814 @@
+{
+  "timezone": "Africa/Cairo",
+  "source": "immutable baseline snapshot only",
+  "cases": [
+    {
+      "id": "renew-2026-06-30-1",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-06-30T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-06-30T07:37:14.000Z",
+        "start_date": "2025-07-01T00:00:00.000Z",
+        "end_date": "2026-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 15,
+        "maintenance_fee": 50,
+        "renew_fee": 120,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 9.1,
+        "total_amount": 204.1,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "renew-2026-06-30-2",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-06-30T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2025-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-06-30T07:37:14.000Z",
+        "start_date": "2025-07-01T00:00:00.000Z",
+        "end_date": "2026-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 15,
+        "maintenance_fee": 50,
+        "renew_fee": 120,
+        "prev_years_fee": 0,
+        "delay_penalty": 24,
+        "value_added_tax": 9.1,
+        "total_amount": 228.1,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "renew-2026-06-30-3",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-06-30T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2024-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-06-30T07:37:14.000Z",
+        "start_date": "2025-07-01T00:00:00.000Z",
+        "end_date": "2026-06-30T00:00:00.000Z",
+        "renew_years": 2,
+        "membership_card_fee": 20,
+        "maintenance_fee": 100,
+        "renew_fee": 120,
+        "prev_years_fee": 100,
+        "delay_penalty": 84,
+        "value_added_tax": 16.8,
+        "total_amount": 450.8,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "renew-2026-06-30-5",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-06-30T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2022-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-06-30T07:37:14.000Z",
+        "start_date": "2025-07-01T00:00:00.000Z",
+        "end_date": "2026-06-30T00:00:00.000Z",
+        "renew_years": 4,
+        "membership_card_fee": 30,
+        "maintenance_fee": 150,
+        "renew_fee": 120,
+        "prev_years_fee": 300,
+        "delay_penalty": 168,
+        "value_added_tax": 25.2,
+        "total_amount": 803.2,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "renew-2026-07-01-1",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-07-01T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-07-01T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 15,
+        "maintenance_fee": 50,
+        "renew_fee": 120,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 9.1,
+        "total_amount": 204.1,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "renew-2026-07-01-2",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-07-01T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2025-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-07-01T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 2,
+        "membership_card_fee": 20,
+        "maintenance_fee": 100,
+        "renew_fee": 120,
+        "prev_years_fee": 100,
+        "delay_penalty": 24,
+        "value_added_tax": 16.8,
+        "total_amount": 390.8,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "renew-2026-07-01-3",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-07-01T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2024-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-07-01T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 3,
+        "membership_card_fee": 25,
+        "maintenance_fee": 150,
+        "renew_fee": 120,
+        "prev_years_fee": 200,
+        "delay_penalty": 84,
+        "value_added_tax": 24.5,
+        "total_amount": 613.5,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "renew-2026-07-01-5",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-07-01T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2022-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-07-01T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 5,
+        "membership_card_fee": 35,
+        "maintenance_fee": 150,
+        "renew_fee": 120,
+        "prev_years_fee": 400,
+        "delay_penalty": 168,
+        "value_added_tax": 25.9,
+        "total_amount": 908.9,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "renew-2026-12-31-1",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-12-31T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-12-31T08:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 15,
+        "maintenance_fee": 50,
+        "renew_fee": 120,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 9.1,
+        "total_amount": 204.1,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "renew-2026-12-31-2",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-12-31T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2025-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-12-31T08:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 2,
+        "membership_card_fee": 20,
+        "maintenance_fee": 100,
+        "renew_fee": 120,
+        "prev_years_fee": 100,
+        "delay_penalty": 24,
+        "value_added_tax": 16.8,
+        "total_amount": 390.8,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "renew-2026-12-31-3",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-12-31T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2024-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-12-31T08:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 3,
+        "membership_card_fee": 25,
+        "maintenance_fee": 150,
+        "renew_fee": 120,
+        "prev_years_fee": 200,
+        "delay_penalty": 84,
+        "value_added_tax": 24.5,
+        "total_amount": 613.5,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "renew-2026-12-31-5",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-12-31T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2022-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-12-31T08:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 5,
+        "membership_card_fee": 35,
+        "maintenance_fee": 150,
+        "renew_fee": 120,
+        "prev_years_fee": 400,
+        "delay_penalty": 168,
+        "value_added_tax": 25.9,
+        "total_amount": 908.9,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "renew-2027-01-01-1",
+      "kind": "renewal",
+      "input": {
+        "now": "2027-01-01T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2027-01-01T08:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 15,
+        "maintenance_fee": 50,
+        "renew_fee": 120,
+        "prev_years_fee": 0,
+        "delay_penalty": 24,
+        "value_added_tax": 9.1,
+        "total_amount": 228.1,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "renew-2027-01-01-2",
+      "kind": "renewal",
+      "input": {
+        "now": "2027-01-01T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2025-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2027-01-01T08:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 2,
+        "membership_card_fee": 20,
+        "maintenance_fee": 100,
+        "renew_fee": 120,
+        "prev_years_fee": 100,
+        "delay_penalty": 84,
+        "value_added_tax": 16.8,
+        "total_amount": 450.8,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "renew-2027-01-01-3",
+      "kind": "renewal",
+      "input": {
+        "now": "2027-01-01T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2024-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2027-01-01T08:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 3,
+        "membership_card_fee": 25,
+        "maintenance_fee": 150,
+        "renew_fee": 120,
+        "prev_years_fee": 200,
+        "delay_penalty": 168,
+        "value_added_tax": 24.5,
+        "total_amount": 697.5,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "renew-2027-01-01-5",
+      "kind": "renewal",
+      "input": {
+        "now": "2027-01-01T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2022-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2027-01-01T08:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 5,
+        "membership_card_fee": 35,
+        "maintenance_fee": 150,
+        "renew_fee": 120,
+        "prev_years_fee": 400,
+        "delay_penalty": 168,
+        "value_added_tax": 25.9,
+        "total_amount": 908.9,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "renew-2028-02-29-1",
+      "kind": "renewal",
+      "input": {
+        "now": "2028-02-29T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2028-02-29T08:37:14.000Z",
+        "start_date": "2027-07-01T00:00:00.000Z",
+        "end_date": "2028-06-30T00:00:00.000Z",
+        "renew_years": 2,
+        "membership_card_fee": 20,
+        "maintenance_fee": 100,
+        "renew_fee": 120,
+        "prev_years_fee": 100,
+        "delay_penalty": 84,
+        "value_added_tax": 16.8,
+        "total_amount": 450.8,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "renew-2028-02-29-2",
+      "kind": "renewal",
+      "input": {
+        "now": "2028-02-29T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2025-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2028-02-29T08:37:14.000Z",
+        "start_date": "2027-07-01T00:00:00.000Z",
+        "end_date": "2028-06-30T00:00:00.000Z",
+        "renew_years": 3,
+        "membership_card_fee": 25,
+        "maintenance_fee": 150,
+        "renew_fee": 120,
+        "prev_years_fee": 200,
+        "delay_penalty": 168,
+        "value_added_tax": 24.5,
+        "total_amount": 697.5,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "renew-2028-02-29-3",
+      "kind": "renewal",
+      "input": {
+        "now": "2028-02-29T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2024-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2028-02-29T08:37:14.000Z",
+        "start_date": "2027-07-01T00:00:00.000Z",
+        "end_date": "2028-06-30T00:00:00.000Z",
+        "renew_years": 4,
+        "membership_card_fee": 30,
+        "maintenance_fee": 150,
+        "renew_fee": 120,
+        "prev_years_fee": 300,
+        "delay_penalty": 168,
+        "value_added_tax": 25.2,
+        "total_amount": 803.2,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "renew-2028-02-29-5",
+      "kind": "renewal",
+      "input": {
+        "now": "2028-02-29T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2022-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2028-02-29T08:37:14.000Z",
+        "start_date": "2027-07-01T00:00:00.000Z",
+        "end_date": "2028-06-30T00:00:00.000Z",
+        "renew_years": 6,
+        "membership_card_fee": 40,
+        "maintenance_fee": 150,
+        "renew_fee": 120,
+        "prev_years_fee": 500,
+        "delay_penalty": 168,
+        "value_added_tax": 26.6,
+        "total_amount": 1014.6,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "family-section-1",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": [
+            {
+              "deleted": 0,
+              "birth_date": "1980-01-01",
+              "rel_ref": {
+                "price": 100
+              }
+            },
+            {
+              "deleted": 0,
+              "birth_date": "2010-01-01",
+              "rel_ref": {
+                "price": 50
+              }
+            },
+            {
+              "deleted": 1,
+              "birth_date": "1980-01-01",
+              "rel_ref": {
+                "price": 100
+              }
+            }
+          ]
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-09-17T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 45,
+        "maintenance_fee": 100,
+        "renew_fee": 280,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 20.3,
+        "total_amount": 455.3,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "family-section-2",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 2,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": [
+            {
+              "deleted": 0,
+              "birth_date": "1980-01-01",
+              "rel_ref": {
+                "price": 100
+              }
+            },
+            {
+              "deleted": 0,
+              "birth_date": "2010-01-01",
+              "rel_ref": {
+                "price": 50
+              }
+            },
+            {
+              "deleted": 1,
+              "birth_date": "1980-01-01",
+              "rel_ref": {
+                "price": 100
+              }
+            }
+          ]
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-09-17T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 45,
+        "maintenance_fee": 100,
+        "renew_fee": 140,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 20.3,
+        "total_amount": 315.3,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "family-section-12",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 12,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": [
+            {
+              "deleted": 0,
+              "birth_date": "1980-01-01",
+              "rel_ref": {
+                "price": 100
+              }
+            },
+            {
+              "deleted": 0,
+              "birth_date": "2010-01-01",
+              "rel_ref": {
+                "price": 50
+              }
+            },
+            {
+              "deleted": 1,
+              "birth_date": "1980-01-01",
+              "rel_ref": {
+                "price": 100
+              }
+            }
+          ]
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-09-17T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 45,
+        "maintenance_fee": 100,
+        "renew_fee": 1250,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 20.3,
+        "total_amount": 1425.3,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "family-section-14",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 14,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": [
+            {
+              "deleted": 0,
+              "birth_date": "1980-01-01",
+              "rel_ref": {
+                "price": 100
+              }
+            },
+            {
+              "deleted": 0,
+              "birth_date": "2010-01-01",
+              "rel_ref": {
+                "price": 50
+              }
+            },
+            {
+              "deleted": 1,
+              "birth_date": "1980-01-01",
+              "rel_ref": {
+                "price": 100
+              }
+            }
+          ]
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-09-17T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 45,
+        "maintenance_fee": 100,
+        "renew_fee": 1250,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 20.3,
+        "total_amount": 1425.3,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "family-section-22",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 22,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": [
+            {
+              "deleted": 0,
+              "birth_date": "1980-01-01",
+              "rel_ref": {
+                "price": 100
+              }
+            },
+            {
+              "deleted": 0,
+              "birth_date": "2010-01-01",
+              "rel_ref": {
+                "price": 50
+              }
+            },
+            {
+              "deleted": 1,
+              "birth_date": "1980-01-01",
+              "rel_ref": {
+                "price": 100
+              }
+            }
+          ]
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-09-17T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 45,
+        "maintenance_fee": 100,
+        "renew_fee": 140,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 20.3,
+        "total_amount": 315.3,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "family-section-23",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 23,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": [
+            {
+              "deleted": 0,
+              "birth_date": "1980-01-01",
+              "rel_ref": {
+                "price": 100
+              }
+            },
+            {
+              "deleted": 0,
+              "birth_date": "2010-01-01",
+              "rel_ref": {
+                "price": 50
+              }
+            },
+            {
+              "deleted": 1,
+              "birth_date": "1980-01-01",
+              "rel_ref": {
+                "price": 100
+              }
+            }
+          ]
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-09-17T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 45,
+        "maintenance_fee": 100,
+        "renew_fee": 140,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 20.3,
+        "total_amount": 315.3,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "fee-0",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 0
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-09-17T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 15,
+        "maintenance_fee": 50,
+        "renew_fee": 0,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 9.1,
+        "total_amount": 84.1,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "fee-50",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 50
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-09-17T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 15,
+        "maintenance_fee": 50,
+        "renew_fee": 60,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 9.1,
+        "total_amount": 144.1,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "fee-60",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 60
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-09-17T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 15,
+        "maintenance_fee": 50,
+        "renew_fee": 60,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 9.1,
+        "total_amount": 144.1,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "fee-120",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-09-17T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 15,
+        "maintenance_fee": 50,
+        "renew_fee": 120,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 9.1,
+        "total_amount": 204.1,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "fee-120.555",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120.555
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-09-17T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 15,
+        "maintenance_fee": 50,
+        "renew_fee": 120.56,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 9.1,
+        "total_amount": 204.66,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "change-transfer_separation_fee-100",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": []
+        },
+        "locker": 25,
+        "change": {
+          "field": "transfer_separation_fee",
+          "value": "100"
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": "100",
+        "member_order_date": "2026-09-17T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 15,
+        "maintenance_fee": 50,
+        "renew_fee": 120,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 23.1,
+        "total_amount": 343.1,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "change-transfer_separation_fee-0.05",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": []
+        },
+        "locker": 25,
+        "change": {
+          "field": "transfer_separation_fee",
+          "value": "0.05"
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": "0.05",
+        "member_order_date": "2026-09-17T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 15,
+        "maintenance_fee": 50,
+        "renew_fee": 120,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 9.11,
+        "total_amount": 229.16000000000003,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "change-previous_penalties-70",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": []
+        },
+        "locker": 25,
+        "change": {
+          "field": "previous_penalties",
+          "value": "70"
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": "70",
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-09-17T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 15,
+        "maintenance_fee": 50,
+        "renew_fee": 120,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 9.1,
+        "total_amount": 299.1,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "change-previous_penalties--10",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": []
+        },
+        "locker": 25,
+        "change": {
+          "field": "previous_penalties",
+          "value": "-10"
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": "-10",
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-09-17T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 15,
+        "maintenance_fee": 50,
+        "renew_fee": 120,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 9.1,
+        "total_amount": 219.1,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "change-join_fee-12.345",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": []
+        },
+        "locker": 25,
+        "change": {
+          "field": "join_fee",
+          "value": "12.345"
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": "12.345",
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-09-17T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 15,
+        "maintenance_fee": 50,
+        "renew_fee": 120,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 10.83,
+        "total_amount": 243.175,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "end-null",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": null
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-09-17T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 15,
+        "maintenance_fee": 50,
+        "renew_fee": 120,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 9.1,
+        "total_amount": 204.1,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "end-invalid",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "invalid"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-09-17T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 15,
+        "maintenance_fee": 50,
+        "renew_fee": 120,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 9.1,
+        "total_amount": 204.1,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "end-2028-06-30",
+      "kind": "renewal",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2028-06-30"
+            }
+          ],
+          "rel_members": []
+        }
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "swimming": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "installment": 0,
+        "previous_penalties": 0,
+        "fellowship_fund_fee": 10,
+        "transfer_separation_fee": 0,
+        "member_order_date": "2026-09-17T07:37:14.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 1,
+        "membership_card_fee": 15,
+        "maintenance_fee": 50,
+        "renew_fee": 120,
+        "prev_years_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 9.1,
+        "total_amount": 204.1,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "swimming-2026-06-30T09:00:00Z",
+      "kind": "swimming",
+      "input": {
+        "now": "2026-06-30T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": []
+        },
+        "swimming": true
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "secondary": 1,
+        "swimming": 150,
+        "form_no": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "member_order_date": "2026-06-30T09:00:00.000Z",
+        "start_date": "2025-07-01T00:00:00.000Z",
+        "end_date": "2026-06-30T00:00:00.000Z",
+        "renew_years": 0,
+        "membership_card_fee": 0,
+        "maintenance_fee": 0,
+        "renew_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 0,
+        "total_amount": 150,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "swimming-2026-07-01T09:00:00Z",
+      "kind": "swimming",
+      "input": {
+        "now": "2026-07-01T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": []
+        },
+        "swimming": true
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "secondary": 1,
+        "swimming": 150,
+        "form_no": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "member_order_date": "2026-07-01T09:00:00.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 0,
+        "membership_card_fee": 0,
+        "maintenance_fee": 0,
+        "renew_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 0,
+        "total_amount": 150,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "swimming-2026-12-31T21:00:00Z",
+      "kind": "swimming",
+      "input": {
+        "now": "2026-12-31T21:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": []
+        },
+        "swimming": true
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "secondary": 1,
+        "swimming": 150,
+        "form_no": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "member_order_date": "2026-12-31T21:00:00.000Z",
+        "start_date": "2025-07-01T00:00:00.000Z",
+        "end_date": "2026-06-30T00:00:00.000Z",
+        "renew_years": 0,
+        "membership_card_fee": 0,
+        "maintenance_fee": 0,
+        "renew_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 0,
+        "total_amount": 150,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "swimming-2027-01-01T09:00:00Z",
+      "kind": "swimming",
+      "input": {
+        "now": "2027-01-01T09:00:00Z",
+        "member": {
+          "id": "fixture-member",
+          "member_code": 900001,
+          "birth_date": "1980-03-20",
+          "section": 1,
+          "rel_member_type": {
+            "name": "عضو عامل",
+            "price": 120
+          },
+          "membership": [
+            {
+              "end_date": "2026-06-30"
+            }
+          ],
+          "rel_members": []
+        },
+        "swimming": true
+      },
+      "expected": {
+        "safe_no": 2,
+        "member_code": 900001,
+        "secondary": 1,
+        "swimming": 150,
+        "form_no": 0,
+        "first_time_fee": 0,
+        "join_fee": 0,
+        "member_order_date": "2027-01-01T09:00:00.000Z",
+        "start_date": "2026-07-01T00:00:00.000Z",
+        "end_date": "2027-06-30T00:00:00.000Z",
+        "renew_years": 0,
+        "membership_card_fee": 0,
+        "maintenance_fee": 0,
+        "renew_fee": 0,
+        "delay_penalty": 0,
+        "value_added_tax": 0,
+        "total_amount": 150,
+        "user_id": "fixture-user"
+      }
+    },
+    {
+      "id": "report-0",
+      "kind": "report",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "data": [
+          {
+            "total_amount": 204.1,
+            "renew_fee": 120,
+            "maintenance_fee": 50,
+            "membership_card_fee": 15,
+            "fellowship_fund_fee": 10,
+            "value_added_tax": 9.1,
+            "canceled": 0
+          }
+        ]
+      },
+      "expected": {
+        "rows": [
+          {
+            "active": true,
+            "memberName": "",
+            "renewFee": 120,
+            "previousYearsFee": 0,
+            "delayPenalty": 0,
+            "previousPenalties": 0,
+            "fellowshipFundFee": 10,
+            "transferSeparationFee": 0,
+            "installment": 0,
+            "feeDifference": 0,
+            "associatedFee": 0,
+            "firstTimeFee": 0,
+            "separationFee": 0,
+            "maintenanceFee": 50,
+            "cardFee": 15,
+            "joinFee": 0,
+            "swimmingBeforeVat": 0,
+            "beforeVat": 195,
+            "swimmingVat": 0,
+            "valueAddedTax": 9.1,
+            "totalAmount": 204.1,
+            "paymentNumber": "",
+            "paymentDate": "",
+            "status": ""
+          }
+        ],
+        "renewalReceiptCount": 1
+      }
+    },
+    {
+      "id": "report-1",
+      "kind": "report",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "data": [
+          {
+            "total_amount": 150,
+            "swimming": 150,
+            "canceled": 0
+          }
+        ]
+      },
+      "expected": {
+        "rows": [
+          {
+            "active": true,
+            "memberName": "",
+            "renewFee": 0,
+            "previousYearsFee": 0,
+            "delayPenalty": 0,
+            "previousPenalties": 0,
+            "fellowshipFundFee": 0,
+            "transferSeparationFee": 0,
+            "installment": 0,
+            "feeDifference": 0,
+            "associatedFee": 0,
+            "firstTimeFee": 0,
+            "separationFee": 0,
+            "maintenanceFee": 0,
+            "cardFee": 0,
+            "joinFee": 0,
+            "swimmingBeforeVat": 131.57894736842104,
+            "beforeVat": 150,
+            "swimmingVat": 18.42105263157896,
+            "valueAddedTax": 0,
+            "totalAmount": 150,
+            "paymentNumber": "",
+            "paymentDate": "",
+            "status": ""
+          }
+        ],
+        "renewalReceiptCount": 0
+      }
+    },
+    {
+      "id": "report-2",
+      "kind": "report",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "data": [
+          {
+            "total_amount": 150,
+            "new_ref_fees": 150,
+            "canceled": 0,
+            "member": {
+              "member_type": 5
+            }
+          }
+        ]
+      },
+      "expected": {
+        "rows": [
+          {
+            "active": true,
+            "memberName": "",
+            "renewFee": 0,
+            "previousYearsFee": 0,
+            "delayPenalty": 0,
+            "previousPenalties": 0,
+            "fellowshipFundFee": 0,
+            "transferSeparationFee": 0,
+            "installment": 0,
+            "feeDifference": 0,
+            "associatedFee": 116.57894736842104,
+            "firstTimeFee": 0,
+            "separationFee": 0,
+            "maintenanceFee": 0,
+            "cardFee": 15,
+            "joinFee": 0,
+            "swimmingBeforeVat": 0,
+            "beforeVat": 131.57894736842104,
+            "swimmingVat": 0,
+            "valueAddedTax": 18.42105263157895,
+            "totalAmount": 150,
+            "paymentNumber": "",
+            "paymentDate": "",
+            "status": ""
+          }
+        ],
+        "renewalReceiptCount": 0
+      }
+    },
+    {
+      "id": "report-3",
+      "kind": "report",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "data": [
+          {
+            "total_amount": 250,
+            "new_ref_fees": 250,
+            "canceled": 0,
+            "refAge": 22,
+            "member": {
+              "member_type": 7
+            },
+            "refType": 2
+          }
+        ]
+      },
+      "expected": {
+        "rows": [
+          {
+            "active": true,
+            "memberName": "",
+            "renewFee": 100,
+            "previousYearsFee": 0,
+            "delayPenalty": 0,
+            "previousPenalties": 0,
+            "fellowshipFundFee": 0,
+            "transferSeparationFee": 0,
+            "installment": 0,
+            "feeDifference": 0,
+            "associatedFee": 116.57894736842104,
+            "firstTimeFee": 0,
+            "separationFee": 0,
+            "maintenanceFee": 0,
+            "cardFee": 15,
+            "joinFee": 0,
+            "swimmingBeforeVat": 0,
+            "beforeVat": 231.57894736842104,
+            "swimmingVat": 0,
+            "valueAddedTax": 18.42105263157895,
+            "totalAmount": 250,
+            "paymentNumber": "",
+            "paymentDate": "",
+            "status": ""
+          }
+        ],
+        "renewalReceiptCount": 1
+      }
+    },
+    {
+      "id": "report-4",
+      "kind": "report",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "data": [
+          {
+            "total_amount": 200,
+            "new_ref_fees": 200,
+            "canceled": 0,
+            "refAge": 15,
+            "member": {
+              "member_type": 9
+            },
+            "refType": 3
+          }
+        ]
+      },
+      "expected": {
+        "rows": [
+          {
+            "active": true,
+            "memberName": "",
+            "renewFee": 60,
+            "previousYearsFee": 0,
+            "delayPenalty": 0,
+            "previousPenalties": 0,
+            "fellowshipFundFee": 0,
+            "transferSeparationFee": 0,
+            "installment": 0,
+            "feeDifference": 0,
+            "associatedFee": 107.80701754385963,
+            "firstTimeFee": 0,
+            "separationFee": 0,
+            "maintenanceFee": 0,
+            "cardFee": 15,
+            "joinFee": 0,
+            "swimmingBeforeVat": 0,
+            "beforeVat": 182.80701754385962,
+            "swimmingVat": 0,
+            "valueAddedTax": 17.19298245614035,
+            "totalAmount": 200,
+            "paymentNumber": "",
+            "paymentDate": "",
+            "status": ""
+          }
+        ],
+        "renewalReceiptCount": 1
+      }
+    },
+    {
+      "id": "report-5",
+      "kind": "report",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "data": [
+          {
+            "total_amount": 300,
+            "seperate_fees": 300,
+            "canceled": 0
+          }
+        ]
+      },
+      "expected": {
+        "rows": [
+          {
+            "active": true,
+            "memberName": "",
+            "renewFee": 0,
+            "previousYearsFee": 0,
+            "delayPenalty": 0,
+            "previousPenalties": 0,
+            "fellowshipFundFee": 0,
+            "transferSeparationFee": 0,
+            "installment": 0,
+            "feeDifference": 0,
+            "associatedFee": 0,
+            "firstTimeFee": 0,
+            "separationFee": 100,
+            "maintenanceFee": 50,
+            "cardFee": 4.39,
+            "joinFee": 0,
+            "swimmingBeforeVat": 0,
+            "beforeVat": 155.0854,
+            "swimmingVat": 0,
+            "valueAddedTax": 7.614600000000001,
+            "totalAmount": 162.7,
+            "paymentNumber": "",
+            "paymentDate": "",
+            "status": ""
+          }
+        ],
+        "renewalReceiptCount": 0
+      }
+    },
+    {
+      "id": "report-6",
+      "kind": "report",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "data": [
+          {
+            "total_amount": 398.2,
+            "renew_fee": 240,
+            "value_added_tax": 18.2,
+            "canceled": 1
+          }
+        ]
+      },
+      "expected": {
+        "rows": [
+          {
+            "active": false,
+            "memberName": "",
+            "renewFee": 240,
+            "previousYearsFee": 0,
+            "delayPenalty": 0,
+            "previousPenalties": 0,
+            "fellowshipFundFee": 0,
+            "transferSeparationFee": 0,
+            "installment": 0,
+            "feeDifference": 0,
+            "associatedFee": 0,
+            "firstTimeFee": 0,
+            "separationFee": 0,
+            "maintenanceFee": 0,
+            "cardFee": 0,
+            "joinFee": 0,
+            "swimmingBeforeVat": 0,
+            "beforeVat": 380,
+            "swimmingVat": 0,
+            "valueAddedTax": 18.2,
+            "totalAmount": 398.2,
+            "paymentNumber": "",
+            "paymentDate": "",
+            "status": ""
+          }
+        ],
+        "renewalReceiptCount": 0
+      }
+    },
+    {
+      "id": "report-7",
+      "kind": "report",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "data": [
+          {
+            "total_amount": 0,
+            "renew_fee": 0,
+            "canceled": 0
+          }
+        ]
+      },
+      "expected": {
+        "rows": [],
+        "renewalReceiptCount": 0
+      }
+    },
+    {
+      "id": "report-8",
+      "kind": "report",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "data": [
+          {
+            "total_amount": "150",
+            "swimming": "150",
+            "canceled": "0"
+          }
+        ]
+      },
+      "expected": {
+        "rows": [
+          {
+            "active": true,
+            "memberName": "",
+            "renewFee": 0,
+            "previousYearsFee": 0,
+            "delayPenalty": 0,
+            "previousPenalties": 0,
+            "fellowshipFundFee": 0,
+            "transferSeparationFee": 0,
+            "installment": 0,
+            "feeDifference": 0,
+            "associatedFee": 0,
+            "firstTimeFee": 0,
+            "separationFee": 0,
+            "maintenanceFee": 0,
+            "cardFee": 0,
+            "joinFee": 0,
+            "swimmingBeforeVat": 131.57894736842104,
+            "beforeVat": 150,
+            "swimmingVat": 18.42105263157896,
+            "valueAddedTax": 0,
+            "totalAmount": 150,
+            "paymentNumber": "",
+            "paymentDate": "",
+            "status": ""
+          }
+        ],
+        "renewalReceiptCount": 0
+      }
+    },
+    {
+      "id": "report-combined",
+      "kind": "report",
+      "input": {
+        "now": "2026-09-17T12:00:00Z",
+        "data": [
+          {
+            "total_amount": 204.1,
+            "renew_fee": 120,
+            "maintenance_fee": 50,
+            "membership_card_fee": 15,
+            "fellowship_fund_fee": 10,
+            "value_added_tax": 9.1,
+            "canceled": 0
+          },
+          {
+            "total_amount": 150,
+            "swimming": 150,
+            "canceled": 0
+          },
+          {
+            "total_amount": 150,
+            "new_ref_fees": 150,
+            "canceled": 0,
+            "member": {
+              "member_type": 5
+            }
+          },
+          {
+            "total_amount": 250,
+            "new_ref_fees": 250,
+            "canceled": 0,
+            "refAge": 22,
+            "member": {
+              "member_type": 7
+            },
+            "refType": 2
+          },
+          {
+            "total_amount": 200,
+            "new_ref_fees": 200,
+            "canceled": 0,
+            "refAge": 15,
+            "member": {
+              "member_type": 9
+            },
+            "refType": 3
+          },
+          {
+            "total_amount": 300,
+            "seperate_fees": 300,
+            "canceled": 0
+          },
+          {
+            "total_amount": 398.2,
+            "renew_fee": 240,
+            "value_added_tax": 18.2,
+            "canceled": 1
+          },
+          {
+            "total_amount": 0,
+            "renew_fee": 0,
+            "canceled": 0
+          },
+          {
+            "total_amount": "150",
+            "swimming": "150",
+            "canceled": "0"
+          }
+        ]
+      },
+      "expected": {
+        "rows": [
+          {
+            "active": true,
+            "memberName": "",
+            "renewFee": 120,
+            "previousYearsFee": 0,
+            "delayPenalty": 0,
+            "previousPenalties": 0,
+            "fellowshipFundFee": 10,
+            "transferSeparationFee": 0,
+            "installment": 0,
+            "feeDifference": 0,
+            "associatedFee": 0,
+            "firstTimeFee": 0,
+            "separationFee": 0,
+            "maintenanceFee": 50,
+            "cardFee": 15,
+            "joinFee": 0,
+            "swimmingBeforeVat": 0,
+            "beforeVat": 195,
+            "swimmingVat": 0,
+            "valueAddedTax": 9.1,
+            "totalAmount": 204.1,
+            "paymentNumber": "",
+            "paymentDate": "",
+            "status": ""
+          },
+          {
+            "active": true,
+            "memberName": "",
+            "renewFee": 0,
+            "previousYearsFee": 0,
+            "delayPenalty": 0,
+            "previousPenalties": 0,
+            "fellowshipFundFee": 0,
+            "transferSeparationFee": 0,
+            "installment": 0,
+            "feeDifference": 0,
+            "associatedFee": 0,
+            "firstTimeFee": 0,
+            "separationFee": 0,
+            "maintenanceFee": 0,
+            "cardFee": 0,
+            "joinFee": 0,
+            "swimmingBeforeVat": 131.57894736842104,
+            "beforeVat": 150,
+            "swimmingVat": 18.42105263157896,
+            "valueAddedTax": 0,
+            "totalAmount": 150,
+            "paymentNumber": "",
+            "paymentDate": "",
+            "status": ""
+          },
+          {
+            "active": true,
+            "memberName": "",
+            "renewFee": 0,
+            "previousYearsFee": 0,
+            "delayPenalty": 0,
+            "previousPenalties": 0,
+            "fellowshipFundFee": 0,
+            "transferSeparationFee": 0,
+            "installment": 0,
+            "feeDifference": 0,
+            "associatedFee": 116.57894736842104,
+            "firstTimeFee": 0,
+            "separationFee": 0,
+            "maintenanceFee": 0,
+            "cardFee": 15,
+            "joinFee": 0,
+            "swimmingBeforeVat": 0,
+            "beforeVat": 131.57894736842104,
+            "swimmingVat": 0,
+            "valueAddedTax": 18.42105263157895,
+            "totalAmount": 150,
+            "paymentNumber": "",
+            "paymentDate": "",
+            "status": ""
+          },
+          {
+            "active": true,
+            "memberName": "",
+            "renewFee": 100,
+            "previousYearsFee": 0,
+            "delayPenalty": 0,
+            "previousPenalties": 0,
+            "fellowshipFundFee": 0,
+            "transferSeparationFee": 0,
+            "installment": 0,
+            "feeDifference": 0,
+            "associatedFee": 116.57894736842104,
+            "firstTimeFee": 0,
+            "separationFee": 0,
+            "maintenanceFee": 0,
+            "cardFee": 15,
+            "joinFee": 0,
+            "swimmingBeforeVat": 0,
+            "beforeVat": 231.57894736842104,
+            "swimmingVat": 0,
+            "valueAddedTax": 18.42105263157895,
+            "totalAmount": 250,
+            "paymentNumber": "",
+            "paymentDate": "",
+            "status": ""
+          },
+          {
+            "active": true,
+            "memberName": "",
+            "renewFee": 60,
+            "previousYearsFee": 0,
+            "delayPenalty": 0,
+            "previousPenalties": 0,
+            "fellowshipFundFee": 0,
+            "transferSeparationFee": 0,
+            "installment": 0,
+            "feeDifference": 0,
+            "associatedFee": 107.80701754385963,
+            "firstTimeFee": 0,
+            "separationFee": 0,
+            "maintenanceFee": 0,
+            "cardFee": 15,
+            "joinFee": 0,
+            "swimmingBeforeVat": 0,
+            "beforeVat": 182.80701754385962,
+            "swimmingVat": 0,
+            "valueAddedTax": 17.19298245614035,
+            "totalAmount": 200,
+            "paymentNumber": "",
+            "paymentDate": "",
+            "status": ""
+          },
+          {
+            "active": true,
+            "memberName": "",
+            "renewFee": 0,
+            "previousYearsFee": 0,
+            "delayPenalty": 0,
+            "previousPenalties": 0,
+            "fellowshipFundFee": 0,
+            "transferSeparationFee": 0,
+            "installment": 0,
+            "feeDifference": 0,
+            "associatedFee": 0,
+            "firstTimeFee": 0,
+            "separationFee": 100,
+            "maintenanceFee": 50,
+            "cardFee": 4.39,
+            "joinFee": 0,
+            "swimmingBeforeVat": 0,
+            "beforeVat": 155.0854,
+            "swimmingVat": 0,
+            "valueAddedTax": 7.614600000000001,
+            "totalAmount": 162.7,
+            "paymentNumber": "",
+            "paymentDate": "",
+            "status": ""
+          },
+          {
+            "active": false,
+            "memberName": "",
+            "renewFee": 240,
+            "previousYearsFee": 0,
+            "delayPenalty": 0,
+            "previousPenalties": 0,
+            "fellowshipFundFee": 0,
+            "transferSeparationFee": 0,
+            "installment": 0,
+            "feeDifference": 0,
+            "associatedFee": 0,
+            "firstTimeFee": 0,
+            "separationFee": 0,
+            "maintenanceFee": 0,
+            "cardFee": 0,
+            "joinFee": 0,
+            "swimmingBeforeVat": 0,
+            "beforeVat": 380,
+            "swimmingVat": 0,
+            "valueAddedTax": 18.2,
+            "totalAmount": 398.2,
+            "paymentNumber": "",
+            "paymentDate": "",
+            "status": ""
+          },
+          {
+            "active": true,
+            "memberName": "",
+            "renewFee": 0,
+            "previousYearsFee": 0,
+            "delayPenalty": 0,
+            "previousPenalties": 0,
+            "fellowshipFundFee": 0,
+            "transferSeparationFee": 0,
+            "installment": 0,
+            "feeDifference": 0,
+            "associatedFee": 0,
+            "firstTimeFee": 0,
+            "separationFee": 0,
+            "maintenanceFee": 0,
+            "cardFee": 0,
+            "joinFee": 0,
+            "swimmingBeforeVat": 131.57894736842104,
+            "beforeVat": 150,
+            "swimmingVat": 18.42105263157896,
+            "valueAddedTax": 0,
+            "totalAmount": 150,
+            "paymentNumber": "",
+            "paymentDate": "",
+            "status": ""
+          }
+        ],
+        "renewalReceiptCount": 3
+      }
+    }
+  ]
+}

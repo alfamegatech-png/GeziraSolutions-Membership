@@ -1,0 +1,69 @@
+@media screen {
+  .nmi { width: 100%; min-width: 0; color: #202b29; }
+  .nmi-toolbar, .nmi-toolbar > div, .nmi-member, .nmi-collect, .nmi-actions, .nmi-pages { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .nmi-toolbar { justify-content: space-between; margin: 8px 0 22px; }
+  .nmi h1 { font-size: 23px; margin: 0; }
+  .nmi h2, .nmi-preview h2 { font-size: 17px; margin: 24px 0 12px; }
+  .nmi-search { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) auto; align-items: end; gap: 14px; padding: 16px 0; border-block: 1px solid #dce4df; }
+  .nmi-search label, .nmi-form label { display: grid; gap: 5px; min-width: 0; }
+  .nmi-table-scroll { width: 100%; overflow-x: auto; }
+  .nmi-table-scroll table { min-width: 720px; }
+  .nmi table, .nmi-dialog table { border-collapse: collapse; width: 100%; font-size: 13px; background: #fff; }
+  .nmi th, .nmi td, .nmi-dialog th, .nmi-dialog td { padding: 11px 12px; border-bottom: 1px solid #dce4df; text-align: start; vertical-align: middle; }
+  .nmi th, .nmi-dialog th { background: #edf3f0; color: #245642; font-weight: 700; }
+  .nmi-state { display: inline-block; padding: 3px 7px; border-radius: 4px; background: #eaf0ed; font-size: 12px; white-space: nowrap; }
+  .nmi-pending, .nmi-awaiting_deposit { color: #77550c; background: #fff2cf; }
+  .nmi-active { color: #17613f; background: #e2f2e9; }
+  .nmi-cancelled { color: #9a3030; background: #fbeaea; }
+  .nmi-member { padding: 16px 0; border-bottom: 1px solid #dce4df; }
+  .nmi-summary { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; padding: 18px 0; margin: 0; border-bottom: 1px solid #dce4df; }
+  .nmi-summary dt { font-size: 12px; color: #62716c; }
+  .nmi-summary dd { font-size: 19px; font-weight: 700; margin: 4px 0 0; overflow-wrap: anywhere; }
+  .nmi-collect { padding: 20px 0; }
+  .nmi-collect label { width: 185px; }
+  .nmi-pages { justify-content: center; padding: 16px; }
+  .nmi-error { padding: 12px; border: 1px solid #e4b2b2; border-radius: 4px; color: #9a3030; background: #fff4f4; margin: 12px 0; }
+  .nmi-dialog { width: min(740px, calc(100vw - 28px)); max-height: calc(100dvh - 28px); direction: rtl; }
+  .nmi-dialog .p-dialog-content { min-width: 0; overflow: auto; }
+  .nmi-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: end; gap: 14px; }
+  .nmi-preview > .p-button, .nmi-dialog table + .p-button { margin-top: 18px; }
+  .nmi-dialog textarea { width: 100%; min-height: 90px; margin-bottom: 14px; }
+  .nmi-paper-dialog { width: min(900px, calc(100vw - 28px)); }
+  .nmi-paper { padding: 20px 0; font-size: 13px; background: #fff; }
+  .nmi-paper header { display: flex; align-items: center; gap: 16px; border-bottom: 2px solid #166449; padding-bottom: 14px; }
+  .nmi-paper h2 { margin: 0; font-size: 19px; }
+  .nmi-paper h3 { margin: 6px 0 0; font-size: 16px; }
+  .nmi-paper .nmi-id { overflow-wrap: anywhere; font-size: 11px; }
+  .nmi-void { color: #a53030; text-align: center; }
+  @media (max-width: 850px) { .nmi-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 540px) { .nmi-search, .nmi-form { grid-template-columns: minmax(0, 1fr); } .nmi h1 { font-size: 20px; } .nmi-toolbar { align-items: start; } .nmi-summary dd { font-size: 17px; } .nmi-paper header { align-items: start; } .nmi-paper h2 { font-size: 16px; } }
+}
+.nmi-receipt-copy { color: #000; background: #fff; padding: 12px 0; font-size: 12px; break-inside: avoid; }
+.nmi-receipt-heading, .nmi-receipt-meta { display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+.nmi-receipt-meta { flex-wrap: wrap; margin-top: 12px; }
+.nmi-receipt-title { text-align: center; margin: 6px 0; }
+.nmi-receipt-grid { overflow-x: auto; margin: 14px 0; }
+.nmi-receipt-paper .nmi-receipt-grid table { table-layout: fixed; min-width: 1100px; width: 100%; border-collapse: collapse; }
+.nmi-receipt-paper .nmi-receipt-grid th, .nmi-receipt-paper .nmi-receipt-grid td { border: 1px solid #555; text-align: center; padding: 5px 2px; font-size: 10px; white-space: normal; overflow-wrap: anywhere; color: #000; background: #fff; }
+.nmi-receipt-allocation { font-size: 10px; margin: 7px 0; }
+@media screen { .nmi-receipt-copy:not(:first-child) { display: none; } .nmi-paper-dialog:has(.nmi-receipt-paper) { width: min(1320px, calc(100vw - 28px)); } }
+@media print {
+  .nmi-receipt-paper.nmi-paper { padding: 0; }
+  .nmi-receipt-copy { padding: 2mm 0; border-bottom: 1px dashed #888; font-size: 10px; line-height: 1.35; }
+  .nmi-receipt-heading img { width: 30px; height: 30px; }
+  .nmi-receipt-title { margin: 2px 0; }
+  .nmi-receipt-allocation { margin: 2px 0; font-size: 8px; }
+  .nmi-receipt-copy:last-child { border-bottom: 0; }
+  .nmi-receipt-paper .nmi-receipt-grid { overflow: visible; margin: 3mm 0; }
+  .nmi-receipt-paper .nmi-receipt-grid table { min-width: 0; margin: 0; }
+  .nmi-receipt-paper .nmi-receipt-meta { margin-top: 2mm; }
+  .nmi-receipt-paper .nmi-receipt-grid th, .nmi-receipt-paper .nmi-receipt-grid td { font-size: 8px; padding: 3px 1px; }
+  .nmi-paper { direction: rtl; font-family: "Membership Arabic", Tahoma, Arial, sans-serif; color: #000; padding: 12mm; font-size: 12px; }
+  .nmi-paper header { display: flex; align-items: center; gap: 12px; border-bottom: 2px solid #000; }
+  .nmi-paper table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+  .nmi-paper th, .nmi-paper td { border: 1px solid #777; padding: 7px; text-align: right; }
+  .nmi-paper .nmi-table-scroll { overflow: visible; }
+  .nmi-paper h2 { font-size: 18px; } .nmi-paper h3 { font-size: 15px; }
+  .nmi-paper .nmi-id { overflow-wrap: anywhere; }
+  .nmi-void { font-size: 24px; text-align: center; }
+}

@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  /* --mainColor: #005258;
+  --gardientMaxColor: #0d9299;
+  --gardientMinColor: #b8dee1;
+  --secondaryColor: #73b8bd;
+  --mainGradient: linear-gradient(
+    to top,
+    #0d9299,
+    #4ca5ab,
+    #73b8bd,
+    #96cbcf,
+    #b8dee1
+  ); */
+
+   --mainColor: #4e261c;
+  --gardientMaxColor: #d6ba8b;
+  --gardientMinColor: #fff9df;
+  --secondaryColor: #e9dab4;
+  --mainGradient: linear-gradient(
+    to top,
+    #d6ba8b,
+    #dfca9f,
+    #e9dab4,
+    #f4e9c9,
+    #fff9df
+  ); 
+  --toBottomGradient: linear-gradient(
+    to bottom,
+    #d6ba8b,
+    #dfca9f,
+    #e9dab4,
+    #f4e9c9,
+    #e3d7a6
+  ); 
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.content {
+  min-height: 100%;
+}
+.label_club {
+  color: var(--mainColor);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

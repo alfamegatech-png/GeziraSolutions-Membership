@@ -1,0 +1,30 @@
+@media screen {
+  .access-license-lock { max-width: 720px; padding: 32px 24px; margin: 60px auto; text-align: center; }
+  .access-license-lock h2 { font-size: 24px; margin: 0 0 18px; }
+  .access-license-lock p { font-size: 16px; line-height: 1.9; margin-bottom: 24px; }
+  .access-admin { min-width: 0; color: #202b29; }
+  .access-admin h1 { font-size: 23px; margin: 8px 0 22px; }
+  .access-search { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 12px; padding: 16px 0; }
+  .access-search label { width: min(100%, 380px); }
+  .access-search label, .access-dialog label { display: grid; gap: 6px; }
+  .access-scroll { overflow-x: auto; }
+  .access-admin table { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14px; }
+  .access-admin th, .access-admin td { padding: 12px; text-align: start; border-bottom: 1px solid #dce4df; max-width: 340px; overflow-wrap: anywhere; }
+  .access-admin th { background: #edf3f0; color: #245642; }
+  .access-pages { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 18px; }
+  .access-dialog { width: min(650px, calc(100vw - 28px)); direction: rtl; }
+  .access-dialog .access-role { display: flex; align-items: center; gap: 8px; padding: 8px 0; }
+  .access-role input { width: 18px; height: 18px; padding: 0; flex: 0 0 18px; }
+  .access-dialog fieldset { border: 1px solid #cedbd4; margin-bottom: 16px; }
+  .access-dialog details { margin: 16px 0; }
+  .access-permission-heading { display: flex; gap: 12px; flex-wrap: wrap; justify-content: space-between; align-items: center; margin: 16px 0; }
+  .access-permission-heading h2 { font-size: 17px; margin: 0; }
+  .access-permissions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-bottom: 16px; }
+  .access-permissions fieldset { min-width: 0; margin: 0; }
+  .access-role span { min-width: 0; overflow-wrap: anywhere; }
+  .access-customized { display: block; font-size: 11px; color: #62716c; margin-top: 3px; }
+  @media (max-width: 540px) { .access-permissions { grid-template-columns: minmax(0, 1fr); } }
+  .access-dialog textarea { min-height: 80px; width: 100%; margin-bottom: 16px; }
+  .access-error { color: #9a3030; background: #fff4f4; padding: 10px; border-radius: 4px; }
+  .access-id { direction: ltr; font-size: 11px; }
+}

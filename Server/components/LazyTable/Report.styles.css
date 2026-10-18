@@ -1,0 +1,188 @@
+.page,
+.page * {
+  box-sizing: border-box;
+}
+
+.page {
+  direction: rtl;
+  color: #000;
+  font-family: Arial, Tahoma, sans-serif;
+}
+
+.report-sheet {
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr) auto auto auto;
+  width: 29.7cm;
+  height: 21cm;
+  margin: 1cm auto;
+  padding: 0.35cm;
+  overflow: hidden;
+  background: #fff;
+}
+
+.report-sheet-header img,
+.report-sheet-footer img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-inline: auto;
+  object-fit: fill;
+}
+
+.report-sheet-header img {
+  height: 2.5cm;
+}
+
+.report-sheet-footer img {
+  height: 2.2cm;
+}
+
+.report-sheet-header {
+  align-self: start;
+}
+
+.report-sheet-footer {
+  align-self: end;
+}
+
+.report-heading {
+  margin: 0.08cm 0 0.12cm;
+}
+
+.report-title {
+  margin: 0 0 0.08cm;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.report-title-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25cm;
+  padding: 0 0.08cm;
+  font-size: 7px;
+  font-weight: 700;
+}
+
+.report-table-area {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.aggregation-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 8.4px;
+}
+
+.aggregation-table th,
+.aggregation-table td {
+  padding: 2.4px 1px;
+  border: 0.6px solid #555;
+  line-height: 1.2;
+  text-align: center;
+  vertical-align: middle;
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+
+.aggregation-table th {
+  background: #e8e6e6;
+  font-weight: 700;
+  font-size: 7px;
+  line-height: 1.15;
+  padding: 2px 1px;
+  white-space: normal;
+}
+
+.aggregation-table tbody td {
+  white-space: nowrap;
+}
+
+.aggregation-table .member-name {
+  text-align: right;
+  white-space: nowrap;
+  overflow: visible;
+  overflow-wrap: normal;
+  font-size: 9.4px;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.aggregation-table .row-number {
+  width: 0.55cm;
+  font-weight: 700;
+}
+
+.sum {
+  background: #cbcbcb;
+  font-weight: 800;
+}
+
+.sum td {
+  border: 1px solid #555;
+}
+
+.report-sheet-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.08cm;
+  font-size: 6.5px;
+  font-weight: 700;
+}
+
+.report-receipt-count {
+  text-align: right;
+}
+
+.report-page-number {
+  text-align: left;
+}
+
+.report-signatures {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.4cm;
+  margin: 0.12cm 0 0.16cm;
+  padding: 0 0.35cm;
+  font-size: 7px;
+  font-weight: 700;
+}
+
+@page {
+  size: A4 landscape;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+  }
+
+  .page {
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .report-sheet {
+    width: 29.7cm;
+    height: 21cm;
+    margin: 0;
+    padding: 0.35cm;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .report-sheet:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+}

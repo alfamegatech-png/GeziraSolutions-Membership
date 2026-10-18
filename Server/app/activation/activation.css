@@ -1,0 +1,9 @@
+.activation-page { max-width: 780px; margin: 30px auto; padding: 0 24px; min-height: 65vh; }
+.activation-page h1 { font-size: 24px; }
+.activation-page dl { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px; padding: 18px 0; border-block: 1px solid #d5dfd9; }
+.activation-page dd { margin: 0; overflow-wrap: anywhere; }
+.activation-page label { display: grid; gap: 8px; margin: 18px 0; }
+.activation-page input { width: 100%; min-width: 0; }
+.activation-page input[readonly] { font-family: monospace; font-size: 12px; }
+.activation-page nav { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; margin: 30px 0; }
+@media (max-width: 540px) { .activation-page dl { grid-template-columns: minmax(0, 1fr); } }
